@@ -17,4 +17,7 @@ public class CreditCard {
             amountOnAccount = amountOnAccount - minus;
         }
     }
+    void infoAbout () {
+        System.out.println("Account number is " + accountNumber +", sum on account is "+amountOnAccount);
+    }
 }
