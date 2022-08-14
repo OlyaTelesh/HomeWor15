@@ -9,4 +9,12 @@ public class CreditCard {
         System.out.println("Received on account = " + sum); // сумма поступленеия на аккаунт
         amountOnAccount = amountOnAccount + sum;
     }
+    void minusSum(double minus) {
+        if (minus > amountOnAccount) {
+            System.out.println("Error, sum is so big");
+        } else {
+            System.out.println("Withdrawal amount =" + minus);// выводит сумму снятия
+            amountOnAccount = amountOnAccount - minus;
+        }
+    }
 }
